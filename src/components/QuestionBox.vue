@@ -1,7 +1,9 @@
 <template>
 	<div class="question-box-container">
 		<b-jumbotron>
-			<template v-slot:lead>{{currentQuestionObject.question}}</template>
+			<div class="jumbotron-lead-text-container d-flex align-items-center justify-content-center">
+				<span class="jumbotron-lead-text-container__lead-text">{{currentQuestionObject.question}}</span>
+			</div>
 			<hr class="my-4" />
 			<b-list-group>
 				<!-- reference to computed answers -->
@@ -130,6 +132,14 @@ export default {
 </script>
 
 <style scoped>
+.jumbotron-lead-text-container {
+	min-height: 20vh;
+}
+
+.jumbotron-lead-text-container__lead-text {
+	font-size: 1.2rem;
+	color: black;
+}
 
 .info-question-icon {
 	color: purple;
