@@ -1,4 +1,4 @@
-# test
+# QuizApp
 
 ## Project setup
 ```
