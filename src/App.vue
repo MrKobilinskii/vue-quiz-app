@@ -14,6 +14,14 @@
 				</b-col>
 			</b-row>
 		</b-container>
+
+		<footer v-if="questions.length" class="page-footer font-small blue">
+			<!-- Copyright -->
+			<div class="footer-copyright text-center py-3">© 2019 Copyright:
+				<a href="https://github.com/MrKobilinskii">Daniil</a>
+			</div>
+			<!-- Copyright -->
+		</footer>
 	</div>
 </template>
 
