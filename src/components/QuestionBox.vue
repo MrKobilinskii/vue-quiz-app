@@ -63,6 +63,10 @@ export default {
 	},
 	computed: {
 		answers() {
+		  //Замена html-символов на нормальные
+			this.currentQuestionObject.incorrect_answers = this.currentQuestionObject.incorrect_answers.map(item => he.decode(item));
+			this.currentQuestionObject.correct_answer = he.decode(this.currentQuestionObject.correct_answer);
+
 			let answers = [...this.currentQuestionObject.incorrect_answers];
 			answers.push(this.currentQuestionObject.correct_answer);
 			return answers;
